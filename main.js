@@ -27,3 +27,9 @@ import pkg3 from './legacy/circle_modex2.js'
 import pkg2 from './legacy/circle_modex2.js'
 pkg2.bar(" using exports.bar")
 pkg3.bar2(" using exports.bar2")
+
+/*example of transforming a require(...) imports to a new-style compatible import.
+* note: the name of the var (e.g. program here) doesn't matter, since the export is just a default export hence it will take whatever name is assigned to it by the import
+* */
+// var program = require('commander');
+// import program from 'commander'
